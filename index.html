@@ -3,600 +3,348 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="4× AWS Certified Data Engineer | Vanguard | PySpark | EMR on EKS | Real-time pipelines">
-        <title>Bhavik Mundra - Data Engineer | AWS | PySpark</title>
-        <link rel="icon" type="image/x-icon" href="/public/vercel.svg">
-        <link rel="stylesheet" href="styles.css">
-        <!-- Lucide Icons -->
-        <script src="https://unpkg.com/lucide@latest"></script>
+        <title>Bhavik Mundra - Data Engineer</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
     </head>
-    <body class="dark">
-        <!-- Navigation -->
-        <header class="navbar">
-            <div class="container navbar-content">
-                <a href="#" class="logo">Bhavik Mundra</a>
-                <nav class="nav-desktop">
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#certifications">Certifications</a>
-                    <a href="mailto:bhavik.mundra1603@gmail.com"
-                        class="btn btn-primary">Contact Me</a>
-                </nav>
-                <div class="nav-mobile">
-                    <button id="menu-toggle" class="menu-toggle">
-                        <i data-lucide="menu"></i>
-                    </button>
-                </div>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">Portfolio</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#about"
+                            class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#experience"
+                            class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#skills"
+                            class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects"
+                            class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education"
+                            class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#certifications"
+                            class="nav-link">Certifications</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
-            <div id="mobile-menu" class="mobile-menu">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#certifications">Certifications</a>
-                <a href="mailto:bhavik.mundra1603@gmail.com"
-                    class="btn btn-primary">Contact Me</a>
+        </nav>
+
+        <!-- Header & Summary -->
+        <header class="header" id="about">
+            <div class="header-container">
+                <img src="assets/images/Profile Pic.jpeg" alt="Bhavik Mundra"
+                    class="profile-pic">
+                <div class="header-content">
+                    <h1 class="name">BHAVIK MUNDRA</h1>
+                    <div class="contact-info">
+                        <span class="info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                height="18" viewBox="0 0 24 24"
+                                fill="currentColor" class="info-icon">
+                                <path
+                                    d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                            </svg>
+                            +91 70494 23348
+                        </span>
+                        <span class="separator">|</span>
+                        <span class="info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                height="18" viewBox="0 0 24 24"
+                                fill="currentColor" class="info-icon">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            Ujjain, M.P., India
+                        </span>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:bhavik.mundra1603@gmail.com"
+                            class="icon-link"
+                            title="bhavik.mundra1603@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/bhavik-mundra"
+                            class="icon-link" title="LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/BhavikMundra"
+                            class="icon-link" title="GitHub Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="summary-text">Data Engineer with 1+ years at TCS
+                        (Vanguard client),
+                        delivering production PySpark ETL pipelines on AWS Glue
+                        and
+                        EMR on EKS. 2× AWS Certified. Seeking to leverage
+                        expertise
+                        in cloud architecture and software development to solve
+                        complex engineering challenges.</p>
+                    <a href="assets/docs/Bhavik_Mundra_Resume.pdf"
+                        download="Bhavik_Mundra_Resume.pdf"
+                        class="download-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
             </div>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <span class="badge">4× AWS Certified • TCS (Vanguard
-                    Client)</span>
-                <h1 class="hero-title">Bhavik Mundra</h1>
-                <p class="hero-subtitle">Data Engineer • AWS | PySpark |
-                    Real-Time Pipelines</p>
-                <p class="hero-description">
-                    Building production-grade PySpark ETLs on AWS Glue & EMR on
-                    EKS • Migrated mainframe/COBOL workloads for Vanguard
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary btn-lg">
-                        See Projects <i data-lucide="arrow-right"
-                            class="btn-icon"></i>
-                    </a>
-                    <a href="/Bhavik_Mundra_Resume.pdf" target="_blank"
-                        class="btn btn-outline btn-lg">Download Resume</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Bhavik1603" target="_blank"
-                        aria-label="GitHub">
-                        <i data-lucide="github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/bhavik-mundra"
-                        target="_blank" aria-label="LinkedIn">
-                        <i data-lucide="linkedin"></i>
-                    </a>
-                    <a href="mailto:bhavik.mundra1603@gmail.com"
-                        aria-label="Email">
-                        <i data-lucide="mail"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container-small">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>
-                            I'm a <strong>Data Engineer</strong> with production
-                            experience delivering high-scale, regulated
-                            financial workloads at <strong>TCS for
-                                Vanguard</strong>.
-                        </p>
-                        <p>
-                            I specialize in modernizing legacy ETL systems —
-                            migrating mainframe/COBOL + DB2 jobs to fully
-                            serverless AWS architectures using PySpark, Glue,
-                            Lambda, Step Functions, and EMR on EKS.
-                        </p>
-                        <p>
-                            Currently focused on building real-time streaming
-                            pipelines, data lakehouses with Apache Iceberg, and
-                            Kubernetes-native data platforms using Argo
-                            Workflows and Karpenter.
-                        </p>
-                        <div class="about-info">
-                            <div class="info-item">
-                                <i data-lucide="map-pin"></i>
-                                <span>Ujjain → Indore, India</span>
-                            </div>
-                            <div class="info-item">
-                                <i data-lucide="calendar"></i>
-                                <span>Available for full-time roles</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="expertise-card">
-                        <h3>Technical Expertise</h3>
-                        <div class="expertise-grid">
-                            <div class="expertise-item"><span
-                                    class="dot"></span> AWS Glue</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> PySpark</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> EMR on EKS</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> Apache Iceberg</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> Kinesis</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> Lambda</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> Step Functions</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> Terraform</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> ArgoCD</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> Karpenter</div>
-                            <div class="expertise-item"><span
-                                    class="dot"></span> SageMaker</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- GitHub Stats Section -->
-        <section class="section section-muted">
-            <div class="container">
-                <div class="github-stats-card">
-                    <div class="github-stats-header">
-                        <i data-lucide="code-2"></i>
-                        <h3>GitHub Stats</h3>
-                    </div>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-value">
-                                <i data-lucide="star"
-                                    class="stat-icon star-icon"></i>
-                                <span id="github-stars">--</span>
-                            </div>
-                            <p class="stat-label">Total Stars</p>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">
-                                <i data-lucide="git-commit"
-                                    class="stat-icon commit-icon"></i>
-                                <span id="github-commits">--</span>
-                            </div>
-                            <p class="stat-label">Commits (Est.)</p>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">
-                                <span id="github-repos">--</span>
-                            </div>
-                            <p class="stat-label">Public Repos</p>
-                        </div>
-                    </div>
-                    <div class="languages-section">
-                        <p class="languages-title">Top Languages</p>
-                        <div id="github-languages"
-                            class="languages-badges"></div>
-                    </div>
-                    <div class="activity-section">
-                        <p class="activity-title">Commit Activity (Last 6
-                            Months)</p>
-                        <div class="activity-chart">
-                            <div class="chart-bar" style="height: 15%"></div>
-                            <div class="chart-bar" style="height: 38%"></div>
-                            <div class="chart-bar" style="height: 25%"></div>
-                            <div class="chart-bar" style="height: 52%"></div>
-                            <div class="chart-bar" style="height: 68%"></div>
-                            <div class="chart-bar" style="height: 48%"></div>
-                            <div class="chart-bar" style="height: 75%"></div>
-                            <div class="chart-bar" style="height: 62%"></div>
-                            <div class="chart-bar" style="height: 80%"></div>
-                            <div class="chart-bar" style="height: 55%"></div>
-                            <div class="chart-bar" style="height: 90%"></div>
-                            <div class="chart-bar" style="height: 72%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section section-muted">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="experience-card">
-                    <div class="experience-header">
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <div class="job-header">
                         <div>
-                            <h3 class="experience-title">Data Engineer</h3>
-                            <p class="experience-company">Tata Consultancy
-                                Services (TCS)</p>
-                            <p class="experience-client">Vanguard Project —
+                            <h3 class="job-title">Data Engineer – Tata
+                                Consultancy Services</h3>
+                            <p class="job-subtitle">Vanguard Project —
                                 Client-Embedded Team</p>
                         </div>
-                        <div class="experience-meta">
-                            <span class="badge badge-secondary">Mar 2025 –
-                                Present</span>
-                            <p class="experience-location">
-                                <i data-lucide="map-pin"></i> Indore, India
-                            </p>
+                        <div class="job-right">
+                            <p class="job-date">Mar 2025 - Present</p>
+                            <p class="job-location">Indore, India</p>
                         </div>
                     </div>
-                    <div class="separator"></div>
-                    <ul class="experience-list">
-                        <li>
-                            <i data-lucide="arrow-right"></i>
-                            <span>Collaborated directly with Vanguard's US team
-                                to migrate mainframe/COBOL ETL jobs and DB2 data
-                                to AWS, enabling real-time client portfolio
-                                calculations.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="arrow-right"></i>
-                            <span>Developed production-grade PySpark ETL
-                                pipelines in AWS Glue, serverless Lambda
-                                functions, orchestrated via Step Functions, with
-                                S3 + CloudFormation (IaC).</span>
-                        </li>
-                        <li>
-                            <i data-lucide="arrow-right"></i>
-                            <span>Designed secure, cost-efficient AWS
-                                architecture for regulated financial
-                                workloads.</span>
-                        </li>
+                    <ul class="job-responsibilities">
+                        <li>Collaborated directly with Vanguard's US-based
+                            team
+                            to migrate mainframe/COBOL ETL jobs and DB2 data
+                            to
+                            AWS, enabling real-time client portfolio
+                            calculations.</li>
+                        <li>Developed production-grade PySpark ETL pipelines
+                            in
+                            AWS Glue, serverless Lambda functions,
+                            orchestrated
+                            via Step Functions, with S3 storage and
+                            CloudFormation (IaC).</li>
+                        <li>Designed secure, cost-efficient AWS architecture
+                            for
+                            regulated financial workloads.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">SDE Intern – Mitsogo
+                                Technologies</h3>
+                            <p class="job-subtitle">Hexnode</p>
+                        </div>
+                        <div class="job-right">
+                            <p class="job-date">Jan 2024 - May 2024</p>
+                            <p class="job-location">Chennai, India</p>
+                        </div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Engineered secure authentication microservices
+                            for
+                            Hexnode using FastAPI and AWS Cognito.</li>
+                        <li>Built scalable backend features with Django and
+                            PostgreSQL, and authored comprehensive unit
+                            tests to
+                            ensure high system reliability.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Tech Stack Section -->
-        <section class="section tech-stack-section">
-            <div class="container">
-                <h2 class="section-title">Tech Stack</h2>
-                <div class="tech-grid">
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/Kinesis.svg"
-                                alt="Kinesis">
-                        </div>
-                        <p class="tech-name">Kinesis</p>
+        <!-- Technical Skills -->
+        <section class="section" id="skills">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-category">Cloud Platforms</div>
+                    <div class="skill-list">AWS (Glue, PySpark ETL, Lambda,
+                        Step Functions, S3, EMR on EKS, Kinesis,
+                        CloudFormation)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-category">Big Data</div>
+                    <div class="skill-list">PySpark, Spark Streaming, Apache
+                        Iceberg, Athena</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-category">Languages</div>
+                    <div class="skill-list">Python, C, C++, Java, SQL,
+                        Bash</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-category">Frameworks</div>
+                    <div class="skill-list">Pandas, NumPy, Flask,
+                        Django</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-category">Databases</div>
+                    <div class="skill-list">PostgreSQL, MySQL, MongoDB,
+                        DynamoDB</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3 class="project-title">Sentinel Stream: Real-Time
+                            Fraud Detection</h3>
+                        <a href="https://github.com/Sentinel-Stream-Labs"
+                            class="project-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
                     </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/Lambda.svg"
-                                alt="Lambda">
-                        </div>
-                        <p class="tech-name">Lambda</p>
+                    <p class="project-description">Built a real-time fraud
+                        detection pipeline on AWS using Kinesis, Glue
+                        PySpark streaming, and S3 Bronze/Silver/Gold layers.
+                        Implemented window-based fraud risk scoring and
+                        automated crawlers,
+                        then integrated Lambda + SNS alerts for high-risk
+                        events with CloudFormation + GitHub Actions
+                        deployment.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3 class="project-title">CloudForge CLI</h3>
+                        <a href="https://github.com/BhavikMundra/CloudForge-CLI"
+                            class="project-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
                     </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/Step-Functions.svg"
-                                alt="Step Functions">
-                        </div>
-                        <p class="tech-name">Step Functions</p>
+                    <p class="project-description">Developed a Python CLI
+                        using
+                        Typer and Jinja2 to dynamically scaffold AWS
+                        serverless
+                        projects and CI/CD pipelines from terminal prompts.
+                        Integrated the GitHub REST API to automate
+                        repository
+                        creation and boilerplate code pushes, streamlining
+                        developer setup.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-degree">Bachelor of Technology in
+                        Computer Science and Engineering</div>
+                    <div class="education-details">Acropolis Institute of
+                        Technology and Research, Indore | 2020 - 2024 | CGPA:
+                        7.86</div>
+                </div>
+                <div class="education-card">
+                    <div class="education-degree">Senior Secondary Certificate
+                        (10+2) - CBSE Board</div>
+                    <div class="education-details">IBS Global Academy, Ujjain |
+                        2020 | 71.8%</div>
+                </div>
+                <div class="education-card">
+                    <div class="education-degree">High School Certificate (10th)
+                        - CBSE Board</div>
+                    <div class="education-details">Gyan Sagar Academy, Ujjain |
+                        2018 | 81%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification -->
+        <section class="section" id="certifications">
+            <h2 class="section-title">CERTIFICATION</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="public/icons/certs/solutionarchitect.png"
+                            alt="AWS Solutions Architect">
                     </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/SageMaker.svg"
-                                alt="SageMaker">
-                        </div>
-                        <p class="tech-name">SageMaker</p>
+                    <div class="cert-info">
+                        <p class="cert-name">AWS Certified Solutions
+                            Architect – Associate</p>
                     </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/CloudFormation.svg"
-                                alt="CloudFormation">
-                        </div>
-                        <p class="tech-name">CloudFormation</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <img src="public/icons/certs/cloudpractitioner.png"
+                            alt="AWS Cloud Practitioner">
                     </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/Glue.svg" alt="Glue">
-                        </div>
-                        <p class="tech-name">AWS Glue</p>
-                    </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/EKS Cloud.svg"
-                                alt="EKS">
-                        </div>
-                        <p class="tech-name">EKS</p>
-                    </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img
-                                src="public/icons/tech/Simple Storage Service.svg"
-                                alt="S3">
-                        </div>
-                        <p class="tech-name">S3</p>
-                    </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/Apache Spark.svg"
-                                alt="Apache Spark">
-                        </div>
-                        <p class="tech-name">Apache Spark</p>
-                    </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/Python.svg"
-                                alt="Python">
-                        </div>
-                        <p class="tech-name">Python</p>
-                    </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/Docker.svg"
-                                alt="Docker">
-                        </div>
-                        <p class="tech-name">Docker</p>
-                    </div>
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <img src="public/icons/tech/HashiCorp Terraform.svg"
-                                alt="Terraform">
-                        </div>
-                        <p class="tech-name">Terraform</p>
+                    <div class="cert-info">
+                        <p class="cert-name">AWS Certified Cloud
+                            Practitioner</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container-large">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <h3 class="project-title">Real-Time Fraud Detection with
-                            PySpark on EKS + SageMaker</h3>
-                        <p class="project-description">50k TPS pipeline via
-                            Kinesis → PySpark streaming + SageMaker inference.
-                            Cut false positives by <strong>41%</strong>.</p>
-                        <div class="project-tags">
-                            <span class="tag">PySpark</span>
-                            <span class="tag">Kinesis</span>
-                            <span class="tag">EKS</span>
-                            <span class="tag">SageMaker</span>
-                            <span class="tag">50k TPS</span>
-                        </div>
-                        <a href="https://github.com/Bhavik1603" target="_blank"
-                            class="project-link">
-                            View on GitHub <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
+        <script>
+            // Mobile menu toggle
+            const navToggle = document.getElementById('navToggle');
+            const navMenu = document.querySelector('.nav-menu');
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <h3 class="project-title">Iceberg Data Lakehouse with
-                            Glue & Athena</h3>
-                        <p class="project-description">Zero-ETL lakehouse with
-                            schema evolution → reduced Athena query costs by
-                            <strong>68%</strong>.</p>
-                        <div class="project-tags">
-                            <span class="tag">Apache Iceberg</span>
-                            <span class="tag">Glue</span>
-                            <span class="tag">Athena</span>
-                            <span class="tag">Cost Optimization</span>
-                        </div>
-                        <a href="https://github.com/Bhavik1603" target="_blank"
-                            class="project-link">
-                            View on GitHub <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
 
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-badge-wrapper">
-                            <span class="badge badge-accent">72% Cost
-                                Reduction</span>
-                        </div>
-                        <h3 class="project-title">Spot-Optimized PySpark
-                            Platform with Karpenter</h3>
-                        <p class="project-description">90% Spot Graviton fleet
-                            on EMR on EKS using Karpenter + Slack-triggered Step
-                            Functions → <strong>savings of 72%</strong>.</p>
-                        <div class="project-tags">
-                            <span class="tag">Karpenter</span>
-                            <span class="tag">EMR on EKS</span>
-                            <span class="tag">Spot Instances</span>
-                            <span class="tag">Graviton</span>
-                            <span class="tag">Step Functions</span>
-                        </div>
-                        <a href="https://github.com/Bhavik1603" target="_blank"
-                            class="project-link">
-                            View on GitHub <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
 
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <div class="project-badge-wrapper">
-                            <span class="badge badge-accent">RTO &lt; 3
-                                min</span>
-                        </div>
-                        <h3 class="project-title">Multi-Region PySpark Failover
-                            (RTO &lt; 3 min)</h3>
-                        <p class="project-description">Active-passive DR for 2TB
-                            analytics using S3 CRR, DynamoDB Global Tables,
-                            Route53 health checks + Terraform automation.</p>
-                        <div class="project-tags">
-                            <span class="tag">Disaster Recovery</span>
-                            <span class="tag">S3 CRR</span>
-                            <span class="tag">DynamoDB Global</span>
-                            <span class="tag">Route53</span>
-                            <span class="tag">Terraform</span>
-                        </div>
-                        <a href="https://github.com/Bhavik1603" target="_blank"
-                            class="project-link">
-                            View on GitHub <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="project-card">
-                        <div class="project-badge-wrapper">
-                            <span class="badge badge-accent">LLM-Powered</span>
-                        </div>
-                        <h3 class="project-title">LLM-Powered Anomaly Detection
-                            with Bedrock</h3>
-                        <p class="project-description">PySpark + Bedrock Titan
-                            embeddings on EKS → OpenSearch + plain-English Slack
-                            alerts via LLM summaries.</p>
-                        <div class="project-tags">
-                            <span class="tag">Bedrock Titan</span>
-                            <span class="tag">OpenSearch</span>
-                            <span class="tag">EKS</span>
-                            <span class="tag">LLM</span>
-                            <span class="tag">Anomaly Detection</span>
-                        </div>
-                        <a href="https://github.com/Bhavik1603" target="_blank"
-                            class="project-link">
-                            View on GitHub <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
-
-                    <!-- Project 6 -->
-                    <div class="project-card">
-                        <h3 class="project-title">Multi-Domain Data Processing
-                            with Argo Workflows</h3>
-                        <p class="project-description">Kubernetes-native data
-                            mesh with ArgoCD + isolated scaling and cost
-                            tagging.</p>
-                        <div class="project-tags">
-                            <span class="tag">ArgoCD</span>
-                            <span class="tag">Argo Workflows</span>
-                            <span class="tag">EKS</span>
-                            <span class="tag">Data Mesh</span>
-                        </div>
-                        <a href="https://github.com/Bhavik1603" target="_blank"
-                            class="project-link">
-                            View on GitHub <i data-lucide="external-link"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="section section-muted">
-            <div class="container-large">
-                <h2 class="section-title">AWS Certifications</h2>
-                <div class="certifications-grid">
-                    <a
-                        href="https://www.credly.com/badges/YOUR_DATA_ENGINEER_BADGE_ID/public_url"
-                        target="_blank" class="cert-card">
-                        <div class="cert-image">
-                            <img src="public/icons/certs/dataengineer.png"
-                                alt="AWS Certified Data Engineer">
-                        </div>
-                        <div class="cert-info">
-                            <p class="cert-name">AWS Certified Data Engineer –
-                                Associate</p>
-                            <p class="cert-date">Issued 2025</p>
-                        </div>
-                        <div class="cert-link-text">
-                            <span>View Certificate</span>
-                            <i data-lucide="external-link"></i>
-                        </div>
-                    </a>
-
-                    <a
-                        href="https://www.credly.com/badges/YOUR_DEVELOPER_BADGE_ID/public_url"
-                        target="_blank" class="cert-card">
-                        <div class="cert-image">
-                            <img src="public/icons/certs/developer.png"
-                                alt="AWS Certified Developer">
-                        </div>
-                        <div class="cert-info">
-                            <p class="cert-name">AWS Certified Developer –
-                                Associate</p>
-                            <p class="cert-date">Issued 2025</p>
-                        </div>
-                        <div class="cert-link-text">
-                            <span>View Certificate</span>
-                            <i data-lucide="external-link"></i>
-                        </div>
-                    </a>
-
-                    <a
-                        href="https://www.credly.com/badges/YOUR_SAA_BADGE_ID/public_url"
-                        target="_blank" class="cert-card">
-                        <div class="cert-image">
-                            <img src="public/icons/certs/solutionarchitect.png"
-                                alt="AWS Certified Solutions Architect">
-                        </div>
-                        <div class="cert-info">
-                            <p class="cert-name">AWS Certified Solutions
-                                Architect – Associate</p>
-                            <p class="cert-date">Issued 2025</p>
-                        </div>
-                        <div class="cert-link-text">
-                            <span>View Certificate</span>
-                            <i data-lucide="external-link"></i>
-                        </div>
-                    </a>
-
-                    <a
-                        href="https://www.credly.com/badges/YOUR_CCP_BADGE_ID/public_url"
-                        target="_blank" class="cert-card">
-                        <div class="cert-image">
-                            <img src="public/icons/certs/cloudpractitioner.png"
-                                alt="AWS Certified Cloud Practitioner">
-                        </div>
-                        <div class="cert-info">
-                            <p class="cert-name">AWS Certified Cloud
-                                Practitioner</p>
-                            <p class="cert-date">Issued 2023</p>
-                        </div>
-                        <div class="cert-link-text">
-                            <span>View Certificate</span>
-                            <i data-lucide="external-link"></i>
-                        </div>
-                    </a>
-                </div>
-                <p class="certifications-note">All certificates are publicly
-                    verifiable on AWS Credly</p>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="footer-text">
-                Bhavik Mundra • AWS Data Engineer • PySpark • Glue • EMR on EKS
-                • Apache Iceberg • Terraform • EKS • Karpenter • Bedrock •
-                Available for Data Engineer & Cloud Engineer roles in India •
-                Ujjain/Indore, Madhya Pradesh
-            </p>
-            <p class="footer-copyright">
-                © 2025 Bhavik Mundra. Built with HTML, CSS & JavaScript
-            </p>
-        </footer>
-
-        <!-- Hidden ATS Keywords -->
-        <div class="sr-only">
-            Data Engineer, AWS Data Engineer, PySpark Developer, AWS Glue, EMR
-            on EKS, Apache Iceberg,
-            Kinesis Data Streams, Lambda, Step Functions, Terraform, Kubernetes
-            EKS, Karpenter,
-            ArgoCD, Argo Workflows, DynamoDB Global Tables, S3 CRR, Route53
-            Failover,
-            Bedrock Titan LLM, Amazon SageMaker, Real-time Analytics, Disaster
-            Recovery RTO,
-            Spot Instances Cost Optimization, Graviton, Athena Cost Reduction,
-            AWS Certified Data Engineer Associate, AWS Certified Developer
-            Associate,
-            AWS Certified Solutions Architect Associate, AWS Cloud Practitioner,
-            TCS Vanguard, Financial Services Data Engineering, Mainframe to AWS
-            Migration,
-            COBOL to PySpark Migration, Serverless ETL, Data Lakehouse,
-            OpenSearch,
-            Anomaly Detection LLM, Slack Automation, Indore, Madhya Pradesh,
-            India
-        </div>
-
-        <script src="script.js"></script>
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
