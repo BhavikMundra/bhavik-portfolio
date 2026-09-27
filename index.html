@@ -10,11 +10,12 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
+        <a class="skip-link" href="#about">Skip to content</a>
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="nav-container">
-                <a href="#" class="nav-logo">Portfolio</a>
-                <ul class="nav-menu">
+                <a href="#about" class="nav-logo" aria-label="Bhavik Mundra home">bm<span>.</span></a>
+                <ul class="nav-menu" id="navMenu">
                     <li class="nav-item"><a href="#about"
                             class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#experience"
@@ -28,7 +29,7 @@
                     <li class="nav-item"><a href="#certifications"
                             class="nav-link">Certifications</a></li>
                 </ul>
-                <button class="nav-toggle" id="navToggle">
+                <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-controls="navMenu" aria-expanded="false" hidden>
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -36,13 +37,39 @@
             </div>
         </nav>
 
+        <main>
         <!-- Header & Summary -->
         <header class="header" id="about">
             <div class="header-container">
-                <img src="assets/images/Profile Pic.jpeg" alt="Bhavik Mundra"
-                    class="profile-pic">
+                <div class="profile-panel">
+                    <img src="assets/images/Profile Pic.jpeg" alt="Bhavik Mundra"
+                        class="profile-pic" width="360" height="420">
+                    <div class="profile-caption"><span>BASED IN INDIA</span><span>Building on AWS ↗</span></div>
+                </div>
                 <div class="header-content">
-                    <h1 class="name">BHAVIK MUNDRA</h1>
+                    <p class="eyebrow">DATA ENGINEER / AWS CERTIFIED</p>
+                    <h1 class="name">Bhavik Mundra<span>.</span></h1>
+                    <p class="hero-heading">Turning complex data<br>into reliable systems.</p>
+                    <p class="summary-text">Data Engineer with 1+ year of
+                        experience at TCS building production PySpark ETL
+                        pipelines on AWS Glue and EMR on EKS for regulated
+                        financial workloads. 2× AWS Certified, with hands-on
+                        experience in legacy mainframe modernization, data
+                        pipeline orchestration, and scalable cloud data
+                        architectures.</p>
+                    <div class="hero-actions">
+                    <a href="assets/docs/Bhavik_Mundra_Resume.pdf"
+                        download="Bhavik_Mundra_Resume.pdf"
+                        class="download-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                        </svg>
+                        Download Resume
+                    </a>
+                    <a class="secondary-btn" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+                    </div>
                     <div class="contact-info">
                         <span class="info-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18"
@@ -94,30 +121,13 @@
                             </svg>
                         </a>
                     </div>
-                    <p class="summary-text">Data Engineer with 1+ year of
-                        experience at TCS building production PySpark ETL
-                        pipelines on AWS Glue and EMR on EKS for regulated
-                        financial workloads. 2× AWS Certified, with hands-on
-                        experience in legacy mainframe modernization, data
-                        pipeline orchestration, and scalable cloud data
-                        architectures.</p>
-                    <a href="assets/docs/Bhavik_Mundra_Resume.pdf"
-                        download="Bhavik_Mundra_Resume.pdf"
-                        class="download-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                            height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                        </svg>
-                        Download Resume
-                    </a>
                 </div>
             </div>
         </header>
 
         <!-- Experience -->
         <section class="section" id="experience">
-            <h2 class="section-title">EXPERIENCE</h2>
+            <h2 class="section-title"><span class="section-number">01 /</span> Where I’ve worked</h2>
             <div class="experience-grid">
                 <div class="experience-item">
                     <div class="job-header">
@@ -176,7 +186,7 @@
 
         <!-- Technical Skills -->
         <section class="section" id="skills">
-            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <h2 class="section-title"><span class="section-number">02 /</span> My technical toolkit</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-category">Cloud Platforms</div>
@@ -209,13 +219,16 @@
 
         <!-- Projects -->
         <section class="section" id="projects">
-            <h2 class="section-title">PROJECTS</h2>
+            <h2 class="section-title"><span class="section-number">03 /</span> Selected projects</h2>
             <div class="projects-grid">
                 <div class="project-item">
+                    <div class="project-visual stream-visual" aria-hidden="true"><span>KINESIS</span><i>→</i><span>GLUE</span><i>→</i><span>S3</span></div>
+                    <p class="eyebrow">01 / STREAMING &amp; ANALYTICS</p>
                     <div class="project-header">
                         <h3 class="project-title">Sentinel Stream: Real-Time
                             Fraud Detection</h3>
                         <a href="https://github.com/Sentinel-Stream-Labs"
+                            aria-label="View Sentinel Stream on GitHub"
                             class="project-link" target="_blank"
                             rel="noopener noreferrer">
                             <svg width="20" height="20" viewBox="0 0 24 24"
@@ -236,9 +249,12 @@
                 </div>
 
                 <div class="project-item">
+                    <div class="project-visual terminal-visual" aria-hidden="true"><span class="terminal-dots">● ● ●</span><code><span>~/cloudforge</span><br>$ build something great<span class="terminal-cursor">_</span></code></div>
+                    <p class="eyebrow">02 / DEVELOPER TOOLS</p>
                     <div class="project-header">
                         <h3 class="project-title">CloudForge CLI</h3>
                         <a href="https://github.com/BhavikMundra/CloudForge-CLI"
+                            aria-label="View CloudForge CLI on GitHub"
                             class="project-link" target="_blank"
                             rel="noopener noreferrer">
                             <svg width="20" height="20" viewBox="0 0 24 24"
@@ -263,7 +279,7 @@
 
         <!-- Education -->
         <section class="section" id="education">
-            <h2 class="section-title">EDUCATION</h2>
+            <h2 class="section-title"><span class="section-number">04 /</span> The foundation</h2>
             <div class="education-grid">
                 <div class="education-card">
                     <div class="education-degree">Bachelor of Technology in
@@ -289,7 +305,7 @@
 
         <!-- Certification -->
         <section class="section" id="certifications">
-            <h2 class="section-title">CERTIFICATION</h2>
+            <h2 class="section-title"><span class="section-number">05 /</span> Certifications</h2>
             <div class="certifications-grid">
                 <div class="cert-card">
                     <div class="cert-icon">
@@ -314,37 +330,47 @@
             </div>
         </section>
 
+        </main>
+
+        <footer class="footer">
+            <div><p class="eyebrow">LET’S CONNECT</p><h2>Have something in mind?</h2><a class="footer-email" href="mailto:bhavik.mundra1603@gmail.com">bhavik.mundra1603@gmail.com <span aria-hidden="true">↗</span></a></div>
+            <div class="footer-bottom"><span>Bhavik Mundra · Data Engineer</span><a href="#about">Back to top ↑</a></div>
+        </footer>
+
         <script>
             // Mobile menu toggle
             const navToggle = document.getElementById('navToggle');
             const navMenu = document.querySelector('.nav-menu');
+            navToggle.hidden = false;
+            document.documentElement.classList.add('js');
+            const setMenu = (open) => {
+                navMenu.classList.toggle('active', open);
+                navToggle.classList.toggle('active', open);
+                navToggle.setAttribute('aria-expanded', String(open));
+                navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+            };
 
             navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
+                setMenu(navToggle.getAttribute('aria-expanded') !== 'true');
             });
 
             // Close mobile menu when clicking on a link
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
+                    setMenu(false);
                 });
             });
 
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+                    setMenu(false);
+                    navToggle.focus();
+                }
             });
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('.navbar')) setMenu(false);
+            });
+            window.matchMedia('(min-width: 801px)').addEventListener('change', () => setMenu(false));
         </script>
     </body>
 </html>
